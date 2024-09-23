@@ -8,8 +8,18 @@
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #030712;
+  color: #fff;
 }
 
 .stacks-list i {
   font-size: 64px;
+}
+
+.hero-image .card {
+}
+
+.hero-image img {
+  width: 350px;
+  height: 350px;
 }
