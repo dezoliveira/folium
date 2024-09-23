@@ -9,3 +9,7 @@
 body {
   font-family: 'Inter', sans-serif;
 }
+
+.stacks-list i {
+  font-size: 64px;
+}
