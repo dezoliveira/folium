@@ -23,7 +23,7 @@
   <body>
     <div id="app">
       <!-- navbar -->
-      <nav class="navbar navbar-expand-lg bg-body-secondary">
+      <nav id="navbar" class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Folium
@@ -53,7 +53,7 @@
 
         <!-- home -->
         <section id="home">
-          <div class="container-fluid col-12 col-md-12 col-sm-12">
+          <div class="container col-12 col-md-12 col-sm-12">
             <!-- hero -->
             <div class="row d-flex" style="height: 100vh;">
               <div class="col-lg-6 col-md-6 col-sm-12 d-flex flex-column align-items-center justify-content-center gap-4 hero">
@@ -87,9 +87,12 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center hero-image">
+
+              <!-- hero image -->
+              <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center justify-content-center">
+                <!-- card -->
                 <div class="card text-white">
-                  <div class="p-4">
+                  <div class="card-image p-4">
                     <img src="/images/profile-pic.png" class="card-img-top" alt="...">
                   </div>
                   <div class="card-body">
