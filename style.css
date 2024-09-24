@@ -12,14 +12,61 @@ body {
   color: #fff;
 }
 
-.stacks-list i {
-  font-size: 64px;
+main {
+  padding: 40px 80px;
 }
 
-.hero-image .card {
+.title {
+  padding: 50px 0;
+}
+
+.stacks-list i {
+  font-size: 32px;
 }
 
 .hero-image img {
   width: 350px;
   height: 350px;
+}
+
+/* .card {
+  background: #222;
+  border: 4px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  margin-bottom: 2rem;
+} */
+
+.card {
+  background-color: #0f172a;
+  color: #fff;
+}
+
+.card-container {
+  /* display: grid; */
+  /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+  /* grid-template-columns: repeat(3, 1fr); */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  grid-gap: 50px;
+}
+
+.card-container img {
+  width: 100%;
+}
+
+#home .card {
+  width: 400px;
+  height: 600px;
+}
+
+#projects .card {
+  width: 500px;
+  height: 520px;
+}
+
+#projects .card .card-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
