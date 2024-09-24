@@ -42,6 +42,18 @@ body {
   text-align: center;
 }
 
+#home .card .card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+#home img {
+  height: 250px;
+  width: 250px;
+}
+
 /* projects */
 
 #projects .card {
