@@ -61,12 +61,23 @@ main {
 }
 
 #projects .card {
-  width: 500px;
-  height: 520px;
+  transition: 0.4s ease-out;
+  /* width: 500px; */
+  /* height: 600px; */
+}
+
+#projects .card:hover {
+  border: 1px solid #dd2476;
+  color: rgba(250, 250, 250, 0.8);
+  cursor: pointer;
 }
 
 #projects .card .card-title {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+#projects .card img {
+  height: 200px;
 }
