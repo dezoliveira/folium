@@ -3,7 +3,7 @@ import emailJS from '@emailjs/browser'
 const contactForm = document.getElementById("contact-form")
 
 const key = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
-console.log(key)
+// console.log(key)
 emailJS.init({
   publicKey: key
 })
