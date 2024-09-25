@@ -23,7 +23,35 @@
     <title>Folium</title>
   </head>
   <body>
+
     <div id="app">
+      <!-- Modal -->
+      <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form id="loginForm" class="form">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label">Email</label>
+                  <input id="loginEmail" type="email" name="loginEmail" class="form-control" placeholder="Digite o seu email" required>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Senha</label>
+                  <input id="loginPassword" type="password" name="loginPassword" class="form-control" rows="2" placeholder="Digite a sua senha" required>
+                </div>  
+                <div class="text-end">
+                  <button type="submit" class="btn btn-danger">Logar</button>
+                </div>       
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- navbar -->
       <nav id="navbar" class="navbar navbar-expand-lg bg-body-secondary">
         <div class="container-fluid">
@@ -46,7 +74,7 @@
                 <a class="nav-link" href="#contact">Contato</a>
               </li>
             </ul>
-            <button class="btn btn-danger">Login</button>
+            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
           </div>
         </div>
       </nav>
