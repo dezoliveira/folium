@@ -40,6 +40,11 @@ ul {
   color: #fff;
 }
 
+.navbar-toggler i {
+  color: #fff; 
+  font-size: 28px;
+}
+
 #home, #projects, #contact {
   padding-bottom: 50px;
 }
