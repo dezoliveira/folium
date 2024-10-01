@@ -5,7 +5,20 @@ import { toggleUI } from "./src/scripts/systemUI";
 const contactForm = document.getElementById("contact-form")
 const loginForm = document.getElementById("loginForm")
 
+const adminLink = document.getElementById("adminLink")
+const mainLink = document.getElementById("mainLink")
 const btnLogout = document.getElementById("btnLogout")
+
+adminLink.addEventListener("click", (e) => {
+  const uiID = e.target.parentElement.id
+  toggleUI(uiID)
+})
+
+mainLink.addEventListener("click", (e) => {
+  const uiID = e.target.parentElement.id
+  console.log(uiID)
+  toggleUI(uiID)
+})
 
 contactForm.addEventListener('submit', (event) => {
   event.preventDefault()
