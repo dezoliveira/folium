@@ -44,7 +44,7 @@
                   <input id="loginPassword" type="password" name="loginPassword" class="form-control" rows="2" placeholder="Digite a sua senha" required>
                 </div>  
                 <div class="text-end">
-                  <button type="submit" class="btn btn-danger">Logar</button>
+                  <button id="logIn" type="submit" class="btn btn-danger">Logar</button>
                 </div>       
               </form>
             </div>
@@ -64,22 +64,31 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
+              <li id="homeLink" class="nav-item">
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav-item">
+              <li id="projectsLink" class="nav-item">
                 <a class="nav-link" href="#projects">Projetos</a>
               </li>
-              <li class="nav-item">
+              <li id="contactLink" class="nav-item">
                 <a class="nav-link" href="#contact">Contato</a>
               </li>
+              <li id="mainLink" class="nav-item" style="display: none;">
+                <a href="#" class="nav-link">Main </a>
+              </li>
+              <li id="adminLink" class="nav-item" style="display: none;">
+                <a href="#" class="nav-link">| Admin</a>
+              </li>
             </ul>
-            <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            <div class="d-flex gap-2">
+              <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button id="btnLogout" class="btn btn-warning"  style="display: none;">Logout</button>
+            </div>
           </div>
         </div>
       </nav>
 
-      <main class="main">
+      <main id="main" class="main">
 
         <!-- home -->
         <section id="home">
@@ -506,6 +515,10 @@
            <!-- </div> -->
           </div>
         </section>
+
+      </main>
+
+      <main id="admin" style="display: none;">
 
       </main>
 
