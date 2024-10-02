@@ -9,6 +9,12 @@ const adminLink = document.getElementById("adminLink")
 const mainLink = document.getElementById("mainLink")
 const btnLogout = document.getElementById("btnLogout")
 
+const loginModal = document.getElementById("loginModal")
+
+loginModal.addEventListener('shown.bs.modal', () => {
+  document.getElementById("loginEmail").focus()
+})
+
 adminLink.addEventListener("click", (e) => {
   const uiID = e.target.parentElement.id
   toggleUI(uiID)

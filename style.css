@@ -45,6 +45,11 @@ ul {
   font-size: 28px;
 }
 
+.list-group-item-action.active {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
 #home, #projects, #contact {
   padding-bottom: 50px;
 }
@@ -103,6 +108,21 @@ ul {
 #projects .card {
   display: flex;
   flex-direction: row;
+}
+
+#admin table {
+  width: 100%;
+}
+
+#admin th {
+  color: #030712;
+  background-color: #fff;
+}
+
+#admin table td,
+#admin table th {
+  text-align: center;
+  vertical-align: middle;
 }
 
 /* medias */
