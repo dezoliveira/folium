@@ -11,7 +11,8 @@ const btnLogout = document.getElementById("btnLogout")
 
 const loginModal = document.getElementById("loginModal")
 
-loginModal.addEventListener('shown.bs.modal', () => {
+loginModal.addEventListener('shown.bs.modal', (e) => {
+  e.preventDefault()
   document.getElementById("loginEmail").focus()
 })
 
@@ -26,8 +27,8 @@ mainLink.addEventListener("click", (e) => {
   toggleUI(uiID)
 })
 
-contactForm.addEventListener('submit', (event) => {
-  event.preventDefault()
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault()
   
   sendEmail()
 })
